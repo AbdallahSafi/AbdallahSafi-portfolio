@@ -16,20 +16,20 @@ server.listen(PORT, () => {
 
 server.use(express.static('./public'));
 
-// localhost:3000/test
-server.get("/test", (request, response) => {
-  response.send("You are awesome!");
-});
+// // localhost:3000/test
+// server.get("/test", (request, response) => {
+//   response.send("You are awesome!");
+// });
 
-// localhost:3000/data
-server.get("/data", (request, response) => {
-  let cars = [
-    {
-      name: "ferrary",
-    },
-    {
-        name: "ford",
-      }
-  ];
-  response.json(cars);
-});
+// // localhost:3000/data
+// server.get("/data", (request, response) => {
+//   let cars = [
+//     {
+//       name: "ferrary",
+//     },
+//     {
+//         name: "ford",
+//       }
+//   ];
+//   response.json(cars);
+// });
